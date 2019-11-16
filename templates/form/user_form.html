@@ -1,0 +1,9 @@
+<div>
+    {% from "form/_formhelpers.html" import render_field %}
+    <form method="post">
+        <dl>
+            {{render_field(form.username, size=50, minlength=4, maxlength=24, placeholder="Filter by Username") }}
+            <input class="btn btn-info" type=submit value=Search>
+        </dl>
+    </form>
+</div>

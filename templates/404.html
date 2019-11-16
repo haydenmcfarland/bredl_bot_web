@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Page Not Found{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col col-md-12 text-center">
+            <img style="height: 150px;" src="{{url_for('static', filename='images/404.png')}}">
+            <h2><b>404</b> - Not Found</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-2"></div>
+        <div class="col col-md-8 text-center">
+            <p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+        </div>
+        <div class="col col-md-2"></div>
+    </div>
+{% endblock %}

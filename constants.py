@@ -1,0 +1,3 @@
+BREDL_WAIT_TIME = 300
+BOT_NAME = 'bredlbot'
+METHODS = ['GET', 'POST']

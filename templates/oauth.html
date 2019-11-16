@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="row headliner">
+            <div class="col col-md-12 text-center">
+                <h2>Connect with <b>Twitch</b></h2>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-12 text-center">
+            <a href="/twitch/oauth/redirect">
+                <img src="{{url_for('static', filename='images/connect_with_twitch.png')}}">
+            </a>
+            <h5><b>Important:</b> This project is still in Alpha, so channels with significant inactivity will be deleted.</h5>
+        </div>
+    </div>
+{% endblock %}

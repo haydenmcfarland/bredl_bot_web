@@ -1,0 +1,186 @@
+body{
+background-color: white;
+}
+
+.breadcrumb > li + li:before {
+    content: "/ ";
+    padding: 0 5px;
+}
+
+.page-header {
+    background-color: #6441a5;
+    padding: 30px;
+    margin-top: 0;
+    border: none;
+}
+
+.btn-info {
+background-color: #6441a5;
+}
+
+.btn-info:hover{
+background-color: #5d3b99;
+}
+
+ol.breadcrumb>li
+{
+    color: #0e0c13;
+}
+.page-footer {
+    background-color: #6441a5;
+    padding: 30px;
+    margin-top: 21px;
+}
+
+.chat {
+    margin-top: 21px;
+}
+
+
+.headliner {
+    margin-top: 21px;
+}
+
+
+a{
+color: #6441a5;
+}
+a:hover
+{
+color: #0e0c13;
+}
+
+a.white{
+color: white;
+}
+
+a.white:hover{
+color: #000000;
+}
+
+.breadcrumb,
+.btn,
+.btn-default {
+    border-radius: 0;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.row-border {
+    border-bottom: 1px solid #ddd
+}
+
+div.row-striped:nth-of-type(odd) {
+    padding: 10px 0;
+    background-color: #f9f9f9
+}
+
+div.row-striped:nth-of-type(even) {
+    padding: 10px 0;
+    background-color: #fff
+}
+
+div.col-striped:nth-of-type(odd) {
+    background-color: #f9f9f9
+}
+
+div.col-striped:nth-of-type(even) {
+    background-color: #fff
+}
+
+h3 {
+    margin-top: 0;
+    display: inline
+}
+
+.content {
+    word-wrap: break-word;
+}
+
+body {
+    font-family: Inconsolata, monospace;
+    margin: auto;
+}
+
+.logo {
+    color: #ffffff;
+}
+
+.logo-img
+{
+    padding: 15px 0px 30px 0px;
+}
+
+.link-footer{
+padding: 20px 0px 0px 0px;
+}
+
+h1.page-header {
+    margin-top: -5px
+}
+
+.col-user {
+    background-color: #2780e3;
+    color: #fff
+}
+
+.main-container {
+    background: #FFF;
+    padding-top: 15px;
+    margin-top: -20px
+}
+
+.footer {
+    width: 100%;
+}
+
+.nab-tabs>li>a {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+.errors,
+input,
+textarea {
+    outline: 0;
+    font-size: .875em
+}
+
+.errors,
+input {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    border: 0px solid #b3aca7!important;
+    border-bottom: none!important;
+    border-radius: 0;
+}
+
+.errors {
+    list-style: none;
+    background-color: #ff4309;
+    color: #fff;
+    padding: 15px;
+    margin: auto
+}
+
+textarea {
+    border-radius: 0;
+    vertical-align: top;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    border: 0px solid #b3aca7!important;
+    border-bottom: none!important;
+}
+
+.post-header{
+margin-top:10px;}
+
+footer {
+color:#ffffff;
+}

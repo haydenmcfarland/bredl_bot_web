@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="row headliner">
+        <div class="col col-md-12 text-center">
+            <img style="height: 225px;" src="{{url_for('static', filename='images/bredl.png')}}">
+            <h1><b>BredlBot</b><small>alpha</small></h1>
+            <h2>Taking the Venom out of <b>Twitch Chat</b></h2>
+        </div>
+    </div>
+    <div class="row headliner">
+        <div class="col col-md-4 text-center">
+            <p>
+                <i style="color:#afafaf" class="fa fa-terminal fa-4x" aria-hidden="true"></i>
+            <h3 style="color:#afafaf">Custom Commands</h3>
+            </p>
+        </div>
+        <div class="col col-md-4 text-center">
+            <p>
+                <i class="fa fa-archive fa-4x" aria-hidden="true"></i>
+                <h3>Chat Logs</h3>
+            </p>
+        </div>
+
+        <div class="col col-md-4 text-center">
+            <p>
+                <i style="color:#afafaf" class="fa fa-users fa-4x" aria-hidden="true"></i>
+            <h3 style="color:#afafaf">Personality Packs</h3>
+            </p>
+        </div>
+    </div>
+    <div class="row chat">
+        <div class="col hidden-xs hidden-sm col-md-3">
+            <h4>Try out some <b>commands</b>:</h4>
+            <ul>
+                <li><h5><b>!</b></h5></li>
+                <li><h5><b>!hello</b></h5></li>
+                <li><h5><b>!dev</b></h5></li>
+                <li><h5><b>!roll</b></h5></li>
+            </ul>
+        </div>
+        <div class="col col-xs-12 col-md-6 text-center">
+            {{ chat.iframe | safe }}
+        </div>
+        <div class="col hidden-sx hidden-sm col-md-3">
+            <h4>News</h4>
+            <p>
+                {% if news %}
+                {{news | safe}}
+                {% endif %}
+            </p>
+        </div>
+    </div>
+{% endblock %}

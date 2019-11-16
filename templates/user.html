@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="row headliner">
+        <div class="col-md-12 text-center">
+            <p>
+            <h3>Channel: <b>{{session['user']['name']}}</b></h3>
+            </p>
+            <p>
+                <a class="btn btn-info" href="/logout">Logout <i class="fa fa-twitch"></i></a>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <p><h3>Bot Settings</h3></p>
+            <p>
+                {% if blocked %}
+                    <a class="btn btn-info disabled" href="/bredl/deploy">Deploy</a>
+                    <a class="btn btn-info disabled" href="/bredl/stop">Stop</a>
+                {% elif switch %}
+                    <a class="btn btn-info disabled" href="/bredl/deploy">Deploy</a>
+                    <a class="btn btn-info" href="/bredl/stop">Stop</a>
+                {% else %}
+                    <a class="btn btn-info" href="/bredl/deploy">Deploy</a>
+                    <a class="btn btn-info disabled" href="/bredl/stop">Stop</a>
+                {% endif %}
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <p>
+                {% if time_left %}
+                    Bot changes disabled for {{time_left}} seconds.<br>
+                    <small>Please give us a few minutes before deploying/stopping your bot again.</small>
+                {% else %}
+                    <small>It takes a few minutes for any changes to propagate to the server.</small>
+                {% endif %}
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div style="padding-right:0px; padding-left:0px;" class="col-md-8">
+            {{ video | safe }}
+        </div>
+        <div style="padding-left:0px; padding-right:0px;" class="col-md-4">
+            {{ chat | safe }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                <h3>Quick Links</h3>
+            </p>
+            <ul>
+                <li><a target="_blank" href="/logs/{{session['user']['name']}}/{{curr_time}}"><i class="fa fa-folder"></i> Today</a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

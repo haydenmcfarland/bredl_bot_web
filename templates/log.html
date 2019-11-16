@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+        <div class="row">
+            <div class="col col-md-6">
+                {% include "form/user_form.html" %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-12">
+                <h3>{{channel}}</h3>
+                <h4>{{date}}</h4>
+            </div>
+        </div>
+    {% for d in data %}
+        <div class="row row-striped">
+            <div class="col col-md-12">
+                <small>{{d | safe}}</small>
+            </div>
+        </div>
+{% endfor %}
+{% endblock %}

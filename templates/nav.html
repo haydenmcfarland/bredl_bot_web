@@ -1,0 +1,9 @@
+<ol class="breadcrumb pull-right">
+    {% if 'user' in session %}
+        <li><a href="/bredl/{{session['user']['name'].lower()}}">{{session['user']['name']}}</a></li>
+    {% else %}
+        <li><a href="/twitch/oauth">Connect <i class="fa fa-twitch"></i></a></li>
+    {% endif %}
+    <li><a href="/logs"><i class="fa fa-folder"></i></a></li>
+</ol>
+<div class="clearfix"></div>

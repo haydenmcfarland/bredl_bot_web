@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="row headliner">
+            <div class="col col-md-12 text-center">
+                <h2>Thanks <b><a href="/bredl/{{username.lower()}}">{{session['user']['name']}}</a>!</b></h2>
+            </div>
+    </div>
+    <div class="row headliner">
+        <div class="col col-md-12 text-center">
+            <b><h3>Visit your user page to set up your bot.</h3></b>
+            {{debug}}
+        </div>
+    </div>
+{% endblock %}
