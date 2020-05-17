@@ -1,5 +1,5 @@
 # bredl bot web (2017)
-### web service for bot registration with twitch oauth
+- web service for bot registration with twitch oauth written in Python/Flask
 
 ## Details
 
